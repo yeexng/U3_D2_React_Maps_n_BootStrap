@@ -2,10 +2,10 @@ import { Container, Row } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import FantasyBooks from '../data/fantasy.json'
-import HistoryBooks from '../data/history.json'
-import HorrorBooks from '../data/horror.json'
-import RomanceBooks from '../data/romance.json'
-import ScifiBooks from '../data/scifi.json'
+// import HistoryBooks from '../data/history.json'
+// import HorrorBooks from '../data/horror.json'
+// import RomanceBooks from '../data/romance.json'
+// import ScifiBooks from '../data/scifi.json'
 
 const AllTheBooks = () => {
   return (
@@ -16,7 +16,7 @@ const AllTheBooks = () => {
 
                     {FantasyBooks.slice(0,6).map((singleBook)=>{
                         return (
-                            <Card key={singleBook.asin} className="col-8 col-sm-5 col-md-4 col-lg-3 p-3 m-2">
+                            <Card key={singleBook.asin}  className="col-8 col-sm-5 col-md-4 col-lg-3 p-3 m-2">
                             <Card.Img variant="top" src={singleBook.img} />
                             <Card.Body>
                                 <Card.Title>{singleBook.title}</Card.Title>
@@ -28,11 +28,11 @@ const AllTheBooks = () => {
                             </Card>
                         )
                     })}
-                <h3 className='col-12 my-3'>History</h3>
+                {/* <h3 className='col-12 my-3'>History</h3>
 
                     {HistoryBooks.slice(0,6).map((singleBook)=>{
                         return (
-                            <Card key={singleBook.asin} className="col-8 col-sm-5 col-md-4 col-lg-3 p-3 m-2">
+                            <Card key={singleBook.asin}  className="col-8 col-sm-5 col-md-4 col-lg-3 p-3 m-2">
                             <Card.Img variant="top" src={singleBook.img} />
                             <Card.Body>
                                 <Card.Title>{singleBook.title}</Card.Title>
@@ -48,7 +48,7 @@ const AllTheBooks = () => {
 
                     {HorrorBooks.slice(0,6).map((singleBook)=>{
                         return (
-                            <Card key={singleBook.asin} className="col-8 col-sm-5 col-md-4 col-lg-3 p-3 m-2">
+                            <Card key={singleBook.asin}  className="col-8 col-sm-5 col-md-4 col-lg-3 p-3 m-2">
                             <Card.Img variant="top" src={singleBook.img} />
                             <Card.Body>
                                 <Card.Title>{singleBook.title}</Card.Title>
@@ -64,7 +64,7 @@ const AllTheBooks = () => {
 
                     {RomanceBooks.slice(0,6).map((singleBook)=>{
                         return (
-                            <Card key={singleBook.asin} className="col-8 col-sm-5 col-md-4 col-lg-3 p-3 m-2">
+                            <Card key={singleBook.asin}  className="col-8 col-sm-5 col-md-4 col-lg-3 p-3 m-2">
                             <Card.Img variant="top" src={singleBook.img} />
                             <Card.Body>
                                 <Card.Title>{singleBook.title}</Card.Title>
@@ -80,7 +80,7 @@ const AllTheBooks = () => {
 
                     {ScifiBooks.slice(0,6).map((singleBook)=>{
                         return (
-                            <Card key={singleBook.asin} className="col-8 col-sm-5 col-md-4 col-lg-3 p-3 m-2">
+                            <Card key={singleBook.asin}  className="col-8 col-sm-5 col-md-4 col-lg-3 p-3 m-2">
                             <Card.Img variant="top" src={singleBook.img} />
                             <Card.Body>
                                 <Card.Title>{singleBook.title}</Card.Title>
@@ -92,7 +92,7 @@ const AllTheBooks = () => {
                             </Card>
                         )
                     })}
-
+ */}
         </Row>
     </Container>
   );
